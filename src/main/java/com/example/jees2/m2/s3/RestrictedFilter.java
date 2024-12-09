@@ -1,9 +1,9 @@
 /*
  * Going deeper into Jakarta Enterprise Edition
  * 
- * https://github.com/egalli64/jeex
+ * https://github.com/egalli64/jees2
  */
-package com.example.jeex.m2.s3;
+package com.example.jees2.m2.s3;
 
 import java.io.IOException;
 
@@ -41,8 +41,8 @@ public class RestrictedFilter implements Filter {
 
         log.trace("Access to restricted area is " + logged);
         if (logged == null || !logged) {
-            // new request generated, the web app should be specified too 
-            ((HttpServletResponse) response).sendRedirect("/jeex/m2/s3/index.jsp");
+            // new request generated, the web app should be specified in the URI too 
+            ((HttpServletResponse) response).sendRedirect("/jees2/m2/s3/index.jsp");
 
             // alternative: keep the original request
 //                request.getRequestDispatcher("/m2/s3/index.jsp").forward(request, response);

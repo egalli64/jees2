@@ -2,7 +2,7 @@
 <!DOCTYPE xml>
 <!-- 
     Introduction to Jakarta Enterprise Edition - JSP
-    https://github.com/egalli64/jeep
+    https://github.com/egalli64/jees2
  -->
 <Context>
     <!-- Put the relevant resource element in Tomcat configuration -->

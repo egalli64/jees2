@@ -1,6 +1,6 @@
 <%--
     Going deeper into Jakarta Enterprise Edition
-    https://github.com/egalli64/jeex
+    https://github.com/egalli64/jees2
  --%>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html>

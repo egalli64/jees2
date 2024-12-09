@@ -1,9 +1,9 @@
 /*
  * Going deeper into Jakarta Enterprise Edition
  * 
- * https://github.com/egalli64/jeex
+ * https://github.com/egalli64/jees2
  */
-package com.example.jeex.m1.s2;
+package com.example.jees2.m1.s2;
 
 import java.io.IOException;
 
