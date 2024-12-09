@@ -9,6 +9,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<!-- !!! What is doing SQL code in the presentation layer? !!!  -->
 <sql:query dataSource="jdbc/hron" var="coders">
     SELECT employee_id, first_name, last_name, hired, salary
     FROM employee
