@@ -14,6 +14,8 @@
 <body>
     <h1>${initParam.admin}</h1>
     <%@include file="/include/navHome.html"%>
+
+    <p>You have been around for ${days} days!</p>
     
     <c:if test="${birthday}">
         <h2>Happy birthday!</h2>

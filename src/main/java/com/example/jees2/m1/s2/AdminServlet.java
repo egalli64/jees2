@@ -7,6 +7,7 @@ package com.example.jees2.m1.s2;
 
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -31,10 +32,15 @@ public class AdminServlet extends HttpServlet {
             throws ServletException, IOException {
         log.traceEntry();
 
-        LocalDate check = LocalDate.parse(getServletContext().getInitParameter("birthday"));
+        LocalDate born = LocalDate.parse(getServletContext().getInitParameter("birthday"));
         LocalDate today = LocalDate.now();
-        request.setAttribute("birthday",
-                check.getDayOfMonth() == today.getDayOfMonth() && check.getMonth() == today.getMonth());
+
+        boolean birthday = born.getDayOfMonth() == today.getDayOfMonth() && born.getMonth() == today.getMonth();
+        request.setAttribute("birthday", birthday);
+
+        long days = ChronoUnit.DAYS.between(born, today);
+        request.setAttribute("days", days);
+
         request.getRequestDispatcher("admin.jsp").forward(request, response);
     }
 }
