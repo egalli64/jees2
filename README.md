@@ -2,11 +2,13 @@
 ## Going deeper into Jakarta Enterprise Edition
 
 ### Used technologies
-- Apache Tomcat 10.1
+- Apache Tomcat 11
 - Maven 3
   - See pom.xml for details
 - Eclipse 2024-06 with disabled warning for other problems with TagExtraInfo class
   - Window - Preferences - Web - JSP files - Validation -> Custom actions
+- Eclipse integration by Project Facets
+  - Set Tomcat 11 as the required runtime with highest Dynamic Web Module and Java dependencies supported
 
 ### Check for the RDBMS actually used
 - _Almost any other RDBMS supported by JDBC should do_
