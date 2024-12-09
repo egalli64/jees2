@@ -1,4 +1,4 @@
-# jeex
+# jees2
 ## Going deeper into Jakarta Enterprise Edition
 
 ### Used technologies
