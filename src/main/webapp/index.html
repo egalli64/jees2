@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>JEE +</title>
+<title>JEE /2</title>
 <base href="/jees2/">
 <link rel="icon" href="data:image/x-icon;,">
 <link rel="stylesheet" type="text/css" href="css/simple.css">
@@ -14,56 +14,63 @@
 <body>
     <h1>Going deeper into Jakarta Enterprise Edition</h1>
 
-    <h2>M1 - JSP</h2>
-    <h3>web.xml</h3>
-    <ul>
-        <li>Accessing a <a href="m1/s2/context.jsp">context parameter</a> (JSP)
-        </li>
-        <li><a href="m1/s2/admin">Administrator home page</a> (context parameter from servlet and JSP)</li>
-        <li><a href="m1/s2/eror">Custom 404</a> error page</li>
-        <li><a href="m1/s2/error">Custom 500</a> error page</li>
-        <li><a href="m1/s2/timeout">Session timeout</a> checker (in seconds)</li>
-    </ul>
+    <main>
+        <section>
+            <h2>M1 - JSP</h2>
+            <h3>web.xml</h3>
+            <ul>
+                <li>Accessing a <a href="m1/s2/context.jsp">context parameter</a> (JSP)
+                </li>
+                <li><a href="m1/s2/admin">Administrator home page</a> (context parameter from servlet and JSP)</li>
+                <li><a href="m1/s2/eror">Custom 404</a> error page</li>
+                <li><a href="m1/s2/error">Custom 500</a> error page</li>
+                <li><a href="m1/s2/timeout">Session timeout</a> checker (in seconds)</li>
+            </ul>
 
-    <h3>Data Source</h3>
-    <ul>
-        <li><a href="m1/s3/coders.jsp">Coders from DB</a> (JSTL, dirty!)</li>
-    </ul>
+            <h3>Data Source</h3>
+            <ul>
+                <li><a href="m1/s3/coders.jsp">Coders from DB</a> (JSTL, dirty!)</li>
+            </ul>
 
-    <h3>JSP Standard Action</h3>
-    <ul>
-        <li><a href="m1/s4/version2.jsp">An improved page</a> (direct access)</li>
-        <li><a href="m1/s4/obsolete.jsp">An improved page</a> (jsp:forward)</li>
-    </ul>
+            <h3>JSP Standard Action</h3>
+            <ul>
+                <li><a href="m1/s4/version2.jsp">An improved page</a> (direct access)</li>
+                <li><a href="m1/s4/obsolete.jsp">An improved page</a> (jsp:forward)</li>
+            </ul>
 
-    <h3>Tag JSTL</h3>
-    <ul>
-        <li><a href="m1/s4/redirect.jsp">Redirect to Apache Tomcat</a> (c:redirect)</li>
-        <li><a href="m1/s4/import.jsp">Import HTML fragment</a> (c:import)</li>
-    </ul>
+            <h3>Tag JSTL</h3>
+            <ul>
+                <li><a href="m1/s4/redirect.jsp">Redirect to Apache Tomcat</a> (c:redirect)</li>
+                <li><a href="m1/s4/import.jsp">Import HTML fragment</a> (c:import)</li>
+            </ul>
+        </section>
 
-    <h2 id="m2">M2 - Servlet</h2>
-    <h3>Data Source</h3>
-    <ul>
-        <li><a href="m2/s2/coders">All coders</a> (@Resource)</li>
-    </ul>
+        <section>
+            <h2>M2 - Servlet</h2>
+            <h3>Data Source</h3>
+            <ul>
+                <li><a href="m2/s2/coders">All coders</a> (@Resource)</li>
+            </ul>
 
-    <h3>Filter</h3>
-    <ul>
-        <li><a href="m2/s3/index.jsp">Restricted area</a></li>
-    </ul>
+            <h3>Filter</h3>
+            <ul>
+                <li><a href="m2/s3/index.jsp">Restricted area</a></li>
+            </ul>
 
-    <h3>Servlet Context</h3>
-    <ul>
-        <li><a href="m2/s4/delta">Seconds from web app startup</a></li>
-        <li><a href="m2/s4/admin">Administrator homepage</a></li>
-    </ul>
+            <h3>Servlet Context</h3>
+            <ul>
+                <li><a href="m2/s4/delta">Seconds from web app startup</a></li>
+                <li><a href="m2/s4/admin">Administrator homepage</a></li>
+            </ul>
 
-    <h3>Servlet Cycle of Life</h3>
-    <ul>
-        <li>A <a href="m2/s5/life">log-only servlet</a></li>
-        <li>Invoking a <a href="m2/s5/checker.html">servlet with business logic</a> (container managed)</li>
-    </ul>
+            <h3>Servlet Cycle of Life</h3>
+            <ul>
+                <li>A <a href="m2/s5/life">log-only servlet</a></li>
+                <li>Invoking a <a href="m2/s5/checker.html">servlet with business logic</a> (container managed)
+                </li>
+            </ul>
+        </section>
+    </main>
 
     <hr>
     <p>That's all (for now)</p>
